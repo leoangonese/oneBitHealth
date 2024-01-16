@@ -12,12 +12,9 @@ const ResultIMC = (props) => {
             <Text style={{ textAlign: 'center', }}>{props.messageResultImc}</Text>
             <Text style={styles.numberImc}>{props.resultImc}</Text>
             <View style={styles.boxShare}>
-                {props.resultImc != null ?
-                    (
-                        <TouchableOpacity style={styles.shareButton} onPress={() => onShare()}>
-                            <Text style={styles.shareText}>Compartilhar</Text>
-                        </TouchableOpacity>
-                    ) : ''}
+                <TouchableOpacity style={styles.shareButton} onPress={() => onShare()}>
+                    <Text style={styles.shareText}>Compartilhar</Text>
+                </TouchableOpacity>
             </View>
         </View>
 
